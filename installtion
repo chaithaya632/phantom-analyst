@@ -1,0 +1,92 @@
+🛠️ Requirements
+
+🔴 Required Tools
+
+sudo apt install nmap curl sqlmap nikto gobuster hydra dnsutils netcat-traditional whatweb -y
+
+🟡 Optional Tools
+
+sudo apt install wpscan masscan sslscan -y
+
+pip install wafw00f --break-system-packages
+
+⚡ Installation
+
+git clone https://github.com/your-username/phantom-analyst.git
+
+cd phantom-analyst
+
+chmod +x phantom.py
+
+▶️ Usage
+
+🔹 Basic Scan
+
+python3 phantom.py -t <target>
+
+🔹 With Reverse Shell Listener
+
+python3 phantom.py -t <target> --shell
+🔹 Custom Shell Port
+
+python3 phantom.py -t <target> --shell --shell-port 5555
+
+🔹 Skip Dependency Check
+
+python3 phantom.py -t <target> --no-dep-check
+
+📁 Output
+
+Reports are saved in:
+
+~/phantom_reports/
+
+Generated Files
+
+📄 phantom_<timestamp>.md → Human-readable report
+
+📊 phantom_<timestamp>.json → Structured data
+
+📊 What You Get
+
+🔓 Open ports & services
+
+🚨 Vulnerabilities with CVSS scores
+
+✅ Verified findings (reduced false positives)
+
+🧠 Attack chains & exploitation paths
+
+🛠️ Exploitation guidance & payloads
+
+📉 Overall risk posture
+
+🔐 Remediation plan
+
+⚠️ Disclaimer
+
+
+🚨 For Educational & Authorized Testing Only
+
+Do NOT use this tool on systems without permission
+Unauthorized scanning is illegal
+The developer is NOT responsible for misuse
+💡 Future Improvements
+🖥️ GUI dashboard
+🤖 AI-based vulnerability correlation
+🔌 Plugin system for custom modules
+🔗 Integration with exploitation frameworks
+🤝 Contributing
+
+Contributions are welcome!
+
+Fork the repo
+Create a feature branch
+Submit a pull request
+⭐ Support
+
+If you like this project:
+
+⭐ Star the repository
+🐛 Report bugs
+📢 Share with the community
